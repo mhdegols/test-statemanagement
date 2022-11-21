@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { HookStateIndex } from "./hookstate/HookStateIndex";
+import { JotaiIndex } from "./jotai/JotaiIndex";
+import { MobX } from "./mobx/MobX";
+import { RecoilIndex } from "./recoil/RecoilIndex";
+import { ReduxIndex } from "./redux/ReduxIndex";
+import { RematchIndex } from "./Rematch/RematchIndex";
+import { XstateIndex } from "./xstate/createMachine";
+import { ZustandIndex } from "./zustand/ZustandIndex";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ReduxIndex />
+      <ZustandIndex />
+      <JotaiIndex />
+      <RecoilIndex />
+      <RematchIndex />
+      <HookStateIndex />
+      <MobX />
+      <XstateIndex />
     </div>
   );
 }
