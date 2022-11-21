@@ -5,6 +5,7 @@ import { MobX } from "./mobx/MobX";
 import { RecoilIndex } from "./recoil/RecoilIndex";
 import { ReduxIndex } from "./redux/ReduxIndex";
 import { RematchIndex } from "./Rematch/RematchIndex";
+import { ValtioIndex } from "./valtio/ValtioIndex";
 import { XstateIndex } from "./xstate/createMachine";
 import { ZustandIndex } from "./zustand/ZustandIndex";
 
@@ -19,6 +20,7 @@ function App() {
       <HookStateIndex />
       <MobX />
       <XstateIndex />
+      <ValtioIndex />
     </div>
   );
 }
